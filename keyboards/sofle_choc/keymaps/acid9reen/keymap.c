@@ -63,20 +63,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * | ^    | Ins  | PrtSc| Menu |      |      |                    | PgUp |PrvWrd| Up   |NxtWrd| DLine| BSpc |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * | ^    | LAlt | LCtrl|LShift|      | Caps |                    | PgDwn| Left | Down | Right| Del  | BSpc |
+ * | ^    |      |      |      |      | Caps |                    | PgDwn| Left | Down | Right| Del  | BSpc |
  * |------+------+------+------+------+------+------.      .------+------+------+------+------+------+------|
- * | ^    | Undo | Cut  | Copy | Paste|PrvDsk| ^    |      |RGBTgl|NxtDsk|LStart|      | LEnd |      | ^    |
+ * | ^    | Undo |PrvDsk|      |NxtDsk|ChLang| ^    |      |RGBTgl|      |LStart|      | LEnd |      | ^    |
  * '------+------+------+------+------+------+------|      |------+------+------+------+------+------+------'
  *               | ^    | ^    | ^    | ^    | ^    |      | ^    | ^    | ^    | ^    | ^    |
  *               '----------------------------------'      '----------------------------------'
  */
 
 [_LOWER] = LAYOUT( \
-  _______, _______, _______, _______,  _______, _______,                              _______,       _______,  _______, _______,  _______ , _______, \
-  _______, KC_INS,  KC_PSCR, KC_APP,   XXXXXXX, XXXXXXX,                              KC_PGUP,       KC_PRVWD, KC_UP,   KC_NXTWD, KC_DLINE, KC_BSPC, \
-  _______, KC_LALT, KC_LCTL, KC_LSFT,  XXXXXXX, KC_CAPS,                              KC_PGDN,       KC_LEFT,  KC_DOWN, KC_RGHT,  KC_DEL,   KC_BSPC, \
-  _______, KC_UNDO, KC_CUT,  KC_COPY, KC_PASTE, C(G(KC_LEFT)), _______,      RGB_TOG, C(G(KC_RGHT)), KC_LSTRT, XXXXXXX, KC_LEND,  XXXXXXX,  _______, \
-                    _______, _______,  _______, _______,       _______,      _______, _______,       _______,  _______, _______ \
+  _______, _______, _______,       _______, _______,       _______,                          _______, _______,  _______, _______,  _______ , _______, \
+  _______, KC_INS,  KC_PSCR,       KC_APP,  XXXXXXX,       XXXXXXX,                          KC_PGUP, KC_PRVWD, KC_UP,   KC_NXTWD, KC_DLINE, KC_BSPC, \
+  _______, XXXXXXX, XXXXXXX,       XXXXXXX, XXXXXXX,       KC_CAPS,                          KC_PGDN, KC_LEFT,  KC_DOWN, KC_RGHT,  KC_DEL,   KC_BSPC, \
+  _______, KC_UNDO, C(G(KC_LEFT)), XXXXXXX, C(G(KC_RGHT)), G(KC_SPC), _______,      RGB_TOG, XXXXXXX, KC_LSTRT, XXXXXXX, KC_LEND,  XXXXXXX,  _______, \
+                    _______,       _______, _______,       _______,   _______,      _______, _______, _______,  _______, _______ \
 ),
 
 /* RAISE
