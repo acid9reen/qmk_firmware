@@ -1,5 +1,5 @@
 ENCODER_MAP_ENABLE = yes
-VIA_ENABLE = yes
+# VIA_ENABLE = yes
 
 # Override options defined in info.json
 BOOTMAGIC_ENABLE = no
